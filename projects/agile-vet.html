@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agile-Vet case study, Brigitta Noémi Bócz</title>
+<meta name="description" content="Agile-Vet: MVP planning, backlog design and a Daily Scrum simulation for a veterinary clinic website. Simulated training project, Agile certification RS5487 (France, 2026).">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Agile-Vet: MVP planning, backlog design and a Daily Scrum simulation">
+<meta property="og:description" content="How I scoped an MVP, structured the backlog and handled impediments as Product Owner. Simulated training project, Agile certification RS5487 (France, 2026).">
+<meta property="og:url" content="https://brigittanoemibocz.github.io/projects/agile-vet.html">
+<meta property="og:image" content="https://brigittanoemibocz.github.io/assets/img/og-agile-vet.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="site-name" href="../">Brigitta Noémi Bócz</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../#case-studies">Case studies</a>
+      <a href="../#background">Background</a>
+      <a href="https://www.linkedin.com/in/brigittanoemibocz/">LinkedIn</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <header class="case-head">
+    <h1>Agile-Vet: MVP planning, backlog design and a Daily Scrum simulation</h1>
+    <p class="lead">How I scoped the first release of a clinic website, structured the backlog, and, as Product Owner, identified two impediments and defined the next actions.</p>
+
+    <p class="label-line"><strong>Simulated training project.</strong> Produced individually and assessed in French for the Agile certification RS5487 (Simplon.co, 2026). Planned outcomes are marked as planned.</p>
+
+    <dl class="meta">
+      <dt>My role</dt><dd>Product Owner in the simulation; sole author of all artefacts</dd>
+      <dt>Assessment</dt><dd>Remote jury of two: project presentation, Agile knowledge questions, live ceremony</dd>
+      <dt>Result</dt><dd>Certification obtained, June 2026</dd>
+      <dt>Tools</dt><dd>Trello, PowerPoint, AI-generated concept images</dd>
+    </dl>
+    <p><a href="../assets/docs/Agile-Vet_one-page-summary.pdf">One-page summary (PDF)</a></p>
+  </header>
+
+  <section class="prose" aria-labelledby="s1">
+    <h2 id="s1">The scenario</h2>
+    <p>A veterinary clinic's website is outdated, hard to read and unusable on a phone, and offers no online booking. Pet owners call for basic information such as opening hours, the emergency number and prices, which ties up the front desk.</p>
+    <ul class="clean">
+      <li><strong>Pet owners</strong> want to find hours and the emergency number instantly, book without calling, and use a phone.</li>
+      <li><strong>Clinic staff</strong> want fewer routine calls, simpler appointment handling and prices that are easy to update.</li>
+      <li><strong>New clients</strong> need a reassuring first impression and a simple path to a first appointment.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="s2">
+    <h2 id="s2">Key decisions</h2>
+    <p class="prose">The case is mostly a sequence of trade-offs. These are the ones that shaped the sprint.</p>
+    <div class="table-scroll" tabindex="0" aria-label="Key decisions table, scrolls sideways on small screens">
+      <table class="wide decisions">
+        <thead><tr><th scope="col">Decision</th><th scope="col">Options weighed</th><th scope="col">What I chose and why</th></tr></thead>
+        <tbody>
+          <tr><td class="id">Release scope</td><td>All eight stories, or the smallest set that works end to end</td><td>Six stories that give one complete journey: find information, book, get a confirmation. Early-slot alerts (US6) and self-service price editing (US7) were deferred because they are more complex to build and less important than the core journey for a first usable version.</td></tr>
+          <tr><td class="id">Sprint Goal</td><td>A list of features, or one outcome</td><td>One outcome: a first working, responsive site with the essential information and simple booking with confirmation. It gave every task a single test: does this move the goal forward?</td></tr>
+          <tr><td class="id">Method</td><td>Scrum, Kanban or a predictive plan</td><td>Scrum, because the client needed a usable first version quickly and some content was still unsettled. I added a work-in-progress limit of two, a Kanban practice, to keep focus and finish work before starting more.</td></tr>
+          <tr><td class="id">Content dependency</td><td>Wait for the clinic's validated prices, or integrate provisional content</td><td>Provisional content, corrected later, so that integration was not blocked by one missing input.</td></tr>
+          <tr><td class="id">Task breakdown</td><td>Small technical tasks, or functional blocks</td><td>Five functional blocks, each traceable to its stories and easy to present. In hindsight this made stories hard to accept one by one (see the 2026 review).</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="s3">
+    <h2 id="s3">Backlog</h2>
+    <p class="prose">Eight user stories, each with acceptance criteria that can be checked rather than debated, for example <em>the emergency number can be found in under 3 seconds and is tap-to-call on mobile</em>.</p>
+    <div class="table-scroll" tabindex="0" aria-label="User stories table, scrolls sideways on small screens">
+      <table class="wide">
+        <thead><tr><th scope="col">ID</th><th scope="col">User story (as a pet owner, unless stated)</th><th scope="col">Acceptance criteria</th><th scope="col">Release 1</th></tr></thead>
+        <tbody>
+          <tr><td class="id">US1</td><td>Find the opening hours quickly</td><td>Prominent; readable on mobile; no extra click; found in under 5 s</td><td><span class="pill in">in</span></td></tr>
+          <tr><td class="id">US2</td><td>Book an appointment online</td><td>Reachable from home page or menu; slot selection; required-field checks; confirmation shown</td><td><span class="pill in">in</span></td></tr>
+          <tr><td class="id">US3</td><td>See the emergency number</td><td>Prominent; tap-to-call; visually highlighted; found in under 3 s</td><td><span class="pill in">in</span></td></tr>
+          <tr><td class="id">US4</td><td>See services and prices</td><td>Clear list; a price per service; mobile layout; content structured so it is easy to update</td><td><span class="pill in">in</span></td></tr>
+          <tr><td class="id">US5</td><td>Use the site properly on mobile</td><td>Adaptive layout; hamburger menu; no overflowing text; easy-to-tap buttons</td><td><span class="pill in">in</span></td></tr>
+          <tr><td class="id">US8</td><td>Receive a confirmation after booking</td><td>Confirmation message; date, time and contact details; error on invalid input</td><td><span class="pill in">in</span></td></tr>
+          <tr class="deferred"><td class="id">US6</td><td>Be notified when an earlier slot frees up</td><td>Cancelled slot detected; email or SMS sent; date and time included; booking link works</td><td><span class="pill out">later</span></td></tr>
+          <tr class="deferred"><td class="id">US7</td><td>As clinic staff, change prices myself</td><td>No technical help needed; changes immediate; consistent on all devices; confirmation shown</td><td><span class="pill out">later</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="prose note">US4 only requires prices to be well structured and easy to update. Letting clinic staff edit them without help is a separate need, US7, and was deferred.</p>
+    <figure class="narrow">
+      <img src="../assets/img/card-us1-acceptance-criteria.jpg" width="857" height="587" loading="lazy" alt="Trello card for US1, opening hours, showing the user story and a four-item acceptance-criteria checklist.">
+      <figcaption>Each story card carries its acceptance criteria as a checklist (Trello, in French).</figcaption>
+    </figure>
+  </section>
+
+  <section aria-labelledby="s4">
+    <h2 id="s4">Sprint plan</h2>
+    <div class="table-scroll prose">
+      <table>
+        <thead><tr><th scope="col">Task</th><th scope="col">Stories served</th></tr></thead>
+        <tbody>
+          <tr><td>T1 Wireframes for the home page and booking flow</td><td>US1–US5</td></tr>
+          <tr><td>T2 Essential information: hours, emergency number, services, prices</td><td>US1, US3, US4</td></tr>
+          <tr><td>T3 Responsive layout: hamburger menu, mobile readability</td><td>US5</td></tr>
+          <tr><td>T4 Simple booking: form, slot choice, confirmation</td><td>US2, US8</td></tr>
+          <tr><td>T5 Internal tests: mobile and the full booking journey</td><td>All six</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="prose">Definition of Done: operational, responsive, tested and validated against the acceptance criteria.</p>
+  </section>
+
+  <section aria-labelledby="s5">
+    <h2 id="s5">Mid-sprint: the board and the Daily Scrum</h2>
+    <p class="prose">I set the timeline so that the assessment on 18 April 2026 fell mid-sprint, because a Daily Scrum only makes sense while work is under way.</p>
+
+    <div class="board-wrap">
+      <div class="board" role="group" aria-label="Sprint board at mid-sprint">
+        <div class="col">
+          <h4>Product Backlog <span>2</span></h4>
+          <div class="card story"><b>US6</b> Early-slot notification</div>
+          <div class="card story"><b>US7</b> Price editing by staff</div>
+        </div>
+        <div class="col">
+          <h4>Sprint Backlog <span>7</span></h4>
+          <div class="card story"><b>US1</b> Opening hours</div>
+          <div class="card story"><b>US2</b> Online booking</div>
+          <div class="card story"><b>US3</b> Emergency number</div>
+          <div class="card story"><b>US4</b> Services and prices</div>
+          <div class="card story"><b>US5</b> Mobile version</div>
+          <div class="card story"><b>US8</b> Booking confirmation</div>
+          <div class="card task"><b>T5</b> Internal tests</div>
+        </div>
+        <div class="col wip">
+          <h4>In Progress <span>2 of 2</span></h4>
+          <div class="card task"><b>T3</b> Responsive layout</div>
+          <div class="card task"><b>T4</b> Simple booking</div>
+        </div>
+        <div class="col done">
+          <h4>Done <span>2</span></h4>
+          <div class="card task"><b>T1</b> Wireframes</div>
+          <div class="card task"><b>T2</b> Essential information</div>
+        </div>
+      </div>
+      <p class="board-legend">Teal edge: user story. Ochre edge: task. In Progress is at its limit of two. Simplified from the Trello board.</p>
+    </div>
+
+    <div class="prose">
+      <p>The Daily Scrum served to check progress towards the Sprint Goal and adjust the plan for the next day. I structured it around what had moved, what came next and what was blocking, speaking for the fictional team and adding the Product Owner's input. Two impediments came up:</p>
+    </div>
+    <ol class="impediments">
+      <li><strong>Mobile menu (T3).</strong> It was still open how to keep the emergency number findable within seconds on a small screen, for an owner who may be under stress.</li>
+      <li><strong>Booking rules (T4).</strong> The available time slots and the form's error messages were not yet defined.</li>
+    </ol>
+    <div class="prose">
+      <p>Both were product decisions, so I took ownership of the next actions: agree a simple mobile menu with the emergency number always visible, and clarify the booking rules with the clinic straight away. The plan for the day: finish the responsive layout (T3) while starting the booking logic (T4), within the limit of two.</p>
+    </div>
+
+    <div class="fig-pair">
+      <figure>
+        <img src="../assets/img/board-mid-sprint.jpg" width="1151" height="811" loading="lazy" alt="Trello board at mid-sprint: T1 and T2 in Done, T3 and T4 in In Progress, stories and T5 in Sprint Backlog, US6 and US7 in Product Backlog.">
+        <figcaption>The Trello board at mid-sprint, as shown to the jury (in French).</figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/img/concept-homepage-wireframe.jpg" width="694" height="685" loading="lazy" alt="Grey-scale wireframe of the clinic home page: banner, opening hours box, emphasised emergency number, three service cards with prices, booking button.">
+        <figcaption>Concept wireframe for the home page, AI-generated with Gemini for the presentation. It shows the intended priorities: hours and emergency number above the fold, a price on every service.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="prose" aria-labelledby="s6">
+    <h2 id="s6">Sprint Review, as planned</h2>
+    <p>At sprint close, the plan was to demonstrate the home page with the essential information, the mobile version and the booking journey through to confirmation, with US6 and US7 as the focus of the next sprint. Expected benefits were fewer routine calls, faster access to critical information on mobile, and booking outside opening hours. These are planned outcomes; no product was built or measured.</p>
+  </section>
+
+  <section class="prose" aria-labelledby="s7">
+    <h2 id="s7">Lessons</h2>
+    <h3>In the original assessment</h3>
+    <p>Within the scenario, late validation of services and prices slowed integration, and the mobile layout needed several iterations. The lessons I drew: finalise the content before the sprint, and give each Daily a concrete objective.</p>
+    <h3>2026 review: what I would do differently</h3>
+    <ul class="clean">
+      <li><strong>Make content readiness part of refinement.</strong> Rather than finalising all content up front, agree for each story which content it needs and list open dependencies before it enters a sprint.</li>
+      <li><strong>Slice stories vertically.</strong> T1 and T5 each span five or six stories, so no story could be accepted on its own before the end of the sprint. Thin end-to-end slices, such as the emergency number done end to end, make progress visible earlier.</li>
+      <li><strong>Make the Definition of Done testable.</strong> Name the devices tested, who accepts each item, and require every acceptance criterion to be met.</li>
+      <li><strong>Make progress and value measurable.</strong> Relative estimates and a simple progress view, such as a burndown, which Scrum leaves optional. For the product, one indicator per expected benefit, such as the share of appointments booked online.</li>
+      <li><strong>Use a shared visual board for remote ceremonies.</strong> The jury suggested a collaborative whiteboard such as Miro for running ceremonies online (oral feedback, paraphrased).</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="s8">
+    <h2 id="s8">What this case shows</h2>
+    <ul class="clean prose">
+      <li>Turning stakeholder needs into a prioritised backlog with checkable acceptance criteria</li>
+      <li>Defining a minimum viable scope and defending what was left out</li>
+      <li>Tracing every task to the stories it serves</li>
+      <li>Treating impediments as product decisions and setting the next actions without delay</li>
+      <li>Working on a methodological subject in professional French</li>
+    </ul>
+    <p class="prose">The evidence covers planning and facilitation. It does not include software delivery, team performance or measured outcomes. The original French report, presentation deck, board screenshots and Daily Scrum script are available on request.</p>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">© 2026 Brigitta Noémi Bócz · <a href="../">All case studies</a> · <a href="https://www.linkedin.com/in/brigittanoemibocz/">LinkedIn</a></div>
+</footer>
+</body>
+</html>
